@@ -1,0 +1,16 @@
+* {
+  text-align: center;
+}
+header {
+  padding: 1cm;
+  border-radius: 1cm;
+  flex-wrap: wrap;
+}
+
+body {
+  color: black;
+  position: relative;
+  align-items: flex-start;
+  justify-content: center;
+  background: linear-gradient(to top left, #ffa500, crimson);
+}
