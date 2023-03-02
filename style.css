@@ -2,6 +2,8 @@
   text-align: center;
 }
 header {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: large;
   padding: 1cm;
   border-radius: 1cm;
   flex-wrap: wrap;
@@ -12,5 +14,30 @@ body {
   position: relative;
   align-items: flex-start;
   justify-content: center;
-  background: linear-gradient(to top left, #ffa500, crimson);
+  background: white;
+  background-image: linear-gradient(grey, lightgrey);
+}
+
+.white-div {
+  height: 200px;
+  width: 200px;
+  background-color: blue;
+  align-items: flex-start;
+}
+
+#button-about {
+  font-size: 20px;
+  font-family: "Comfortaa", cursive;
+  width: 100px;
+  background-color: lightgrey;
+  padding-left: 2px;
+  border: 1px;
+  border-style: ridge;
+  border-radius: 10px;
+}
+
+p {
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-bottom: 10px;
 }
