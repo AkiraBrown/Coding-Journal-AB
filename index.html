@@ -14,10 +14,25 @@
       href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
 
     <header>
       <h1>Welcome To My Journey</h1>
     </header>
+
+    <div id="sidebar-Menu" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()"
+        >&times;</a
+      >
+      <a href="./html/learningJavascript.html">Javascript</a>
+      <a href="#">Html & Css</a>
+    </div>
+    <div id="main">
+      <button class="openbtn" onclick="openMenu()">&#9776; Menu</button>
+    </div>
     <div>
       <h3>
         Here I will be documenting my coding journey through learning javascript
@@ -57,77 +72,5 @@
     </div>
 
     <input type="button" id="button-about" value="About" />
-
-    <!--
-  <section>
-    <fieldset>
-    <legend> Introduction to forms</legend>
-    <form>
-      <label for="username">Username</label>
-      <input id="username" name="name" type="text" required/>
-      
-      <div>
-        <label>
-          <input id="gender-male" name="gender" type="radio" value="male" />
-          Male
-        </label>
-        <label>
-          <input id="gender-female" name="gender" type="radio" value="female" />
-          Female
-        </label>
-        <label>
-          <input
-            id="gender-undisclosed"
-            name="gender"
-            type="radio"
-            value="undisclosed"
-          />
-          Undisclosed
-        </label>
-        
-      </div>
-
-      <div>
-        <label>
-          <input id="hobbies-football" name="football" type="checkbox" value="football" />
-          Football
-        </label>
-        <label>
-          <input id="hobbies-sewing" name="sewing" type="checkbox" value="sewing" />
-          Sewing
-        </label>
-        <label>
-          <input id="hobbies-running" name="running" type="checkbox" value="running" />
-          Running
-        </label>
-        <label>
-          <input id="hobbies-pickleball" name="pickleball" type="checkbox" value="pickleball" />
-          Pickleball
-        </label>
-      </div>
-      <div>
-        <label>
-          <input id="newsletter-signup" name="newsletter" type="checkbox" value="yes" />
-          Sign up for our newsletter
-        </label>
-      </div>
-
-      <div>
-        <select id="country-selection" name="country">
-          <option>-- Select a country --</option>
-          <option value="usa">United States of America</option>
-          <option value="canada">Canada</option>
-          <option value="mexico">Mexico</option>
-        </select>
-      </div>
-
-      <div>
-        <input type="text" id="pet-name" name="pet-name" placeholder="Enter your pets name..."/>
-      </div>
-      <button type="submit">Submit</button>
-    </form>
-    </fieldset>
-  </section>
--->
   </body>
 </html>

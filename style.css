@@ -2,15 +2,18 @@
   text-align: center;
 }
 header {
+  display: grid;
+  grid-template-rows: 75px 20px;
+  /*grid-template-columns: 100px 100px;*/
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: large;
   /*padding: 1cm;*/
   /*border-radius: 1cm;*/
   flex-wrap: wrap;
   background-color: lightblue;
-  background-image: linear-gradient(blue, lightblue);
+  background-image: linear-gradient(grey, lightgrey);
   border-bottom: 5px solid black;
-  color: white;
+  color: #121212;
   padding: 25px 50px;
   text-align: center;
 }
@@ -23,14 +26,7 @@ body {
   background: white;
   background-image: linear-gradient(grey, lightgrey);
 }
-
-.white-div {
-  height: 200px;
-  width: 200px;
-  background-color: blue;
-  align-items: flex-start;
-}
-
+/*
 #button-about {
   font-size: 20px;
   font-family: "Comfortaa", cursive;
@@ -41,18 +37,20 @@ body {
   border-style: ridge;
   border-radius: 10px;
 }
+*/
 
 p {
   margin-left: 300px;
   margin-right: 300px;
   margin-bottom: 10px;
-  transition: 2s ease;
+  /*transition: 2s ease;*/
 }
-
+/*
 p:hover {
   margin: 100px;
   text-decoration: underline;
 }
+*/
 
 .paragraph {
   color: black;
@@ -70,8 +68,81 @@ p:hover {
   color: black;
 }
 
-/* .first-paragraph::first-letter{
+.hidden {
+  display: none;
+}
+
+ul li {
+  border: 2px solid;
+  margin: 5px;
+  padding: 3px;
+}
+
+ul li:first-child {
+  margin-top: 0;
+}
+
+.first-paragraph::first-letter {
   font-weight: bold;
   font-size: 50px;
+}
 
-} */
+/*-----------------------------SideBarMenu--------------------------------------*/
+
+.sidebar {
+  height: 100%; /*Spans the full height of the website*/
+  width: 0; /*0 width - alter this with javascript*/
+  position: fixed; /*Keeps the menu fixed in place*/
+  z-index: 1; /* Keeps it on top*/
+  top: 0;
+  left: 0;
+  background-color: #111; /*Makes it black*/
+  overflow-x: hidden; /* Disables horizontal scroll*/
+  padding-top: 60px; /*Place Content 60px from the top*/
+  transition: 0.5s; /*0.5 second transition effect to slide in the sidebar*/
+}
+/*Creates the links*/
+.sidebar a {
+  padding: 8px 8px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* when changes the color of the links when the mouse hovers over them*/
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Puts the close button in the top right corner*/
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* open the sidebar*/
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
