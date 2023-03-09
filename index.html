@@ -20,39 +20,42 @@
     />
 
     <header>
-      <h1>Welcome To My Journey</h1>
+      
+      <div id="sidebar-Menu" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()"
+          >&times;</a
+        >
+        <a href="./html/learningJavascript.html">Javascript</a>
+        <a href="#">HTML & CSS</a>
+      </div>
+      <div id="main">
+        <button class="openbtn" onclick="openMenu()">&#9776;</button>
+      </div>
+      <div> 
+        <h1>Akira Brown</h1>
     </header>
 
-    <div id="sidebar-Menu" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()"
-        >&times;</a
-      >
-      <a href="./html/learningJavascript.html">Javascript</a>
-      <a href="#">HTML & CSS</a>
-    </div>
-    <div id="main">
-      <button class="openbtn" onclick="openMenu()">&#9776; Menu</button>
-    </div>
-    <div>
-      <h3>
-        Here I will be documenting my coding journey through learning javascript
-      </h3>
+      <img src="Images/Akira Brown 2.jpg" id="displayPic" alt="ProfilePicture" width="400" height="500">
+
+    
+      
 
       <p class="paragraph first-paragraph">
-        orem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo
-        mauris, egestas ac leo at, tincidunt vestibulum nisi. Vivamus sed
-        vestibulum augue, sit amet lacinia dolor. Duis vulputate, quam vitae
-        sodales iaculis, ante lorem placerat mauris, in elementum quam libero ac
-        dolor. Vestibulum sit amet turpis enim. Donec sit amet augue vitae metus
-        pulvinar sagittis vitae a tellus. Morbi laoreet enim a elit hendrerit, a
-        consequat dolor cursus. Morbi mattis id tellus nec ultrices. Suspendisse
-        accumsan diam vulputate justo mattis fermentum. Vivamus feugiat neque
-        vitae ante vehicula, at dapibus nibh finibus. In varius elementum
-        tempor. Praesent sagittis porttitor ultricies. Pellentesque eu urna
-        eros. Integer dui risus, rutrum eu placerat eget, commodo eu tellus.
-        Mauris nec pretium risus, a elementum dolor. Proin cursus mi non
-        interdum euismod. Nullam placerat ante nunc, posuere volutpat augue
-        mattis vehicula.
+        Welcome to my coding journal, where I document my journey to becoming
+        a fullstack developer. Throughout my life I've always had some experience
+        with coding and computers; with some of my earliest experiences being 
+        with Appinventor and Scratch. 
+
+        As a kid I truly enjoyed building things and games were always a passion
+        of mine. So I chased after that passion and went to Norwich University 
+        of the Arts (American translation: a college) to get a degree in 
+        Bsc Games Development in the UK. During my 3 Years I learnt Javascript
+        under the Phaser.js plugin and matter.js and then learnt C++ under Unreal
+        engine for my last 2 years.
+
+
+
+        
       </p>
 
       <p class="paragraph second-paragraph">
@@ -71,6 +74,6 @@
       </p>
     </div>
 
-    <!-- <input type="button" id="button-about" value="About" /> -->
+    
   </body>
 </html>

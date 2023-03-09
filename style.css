@@ -3,18 +3,18 @@
 }
 header {
   display: grid;
-  grid-template-rows: 75px 20px;
-  /*grid-template-columns: 100px 100px;*/
+  /* grid-template-rows: 25%px 75%px; */
+  grid-template-columns: 20% 60%;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: large;
   /*padding: 1cm;*/
   /*border-radius: 1cm;*/
-  flex-wrap: wrap;
-  background-color: lightblue;
-  background-image: linear-gradient(grey, lightgrey);
+  /* flex-wrap: wrap; */
+  /* background-color: lightblue; */
+  background-image: white;
   border-bottom: 5px solid black;
   color: #121212;
-  padding: 25px 50px;
+  /* padding: 25px 25px; */
   text-align: center;
 }
 .class-for-index {
@@ -23,21 +23,14 @@ header {
   align-items: flex-start;
   justify-content: center;
   background: white;
-  background-image: linear-gradient(grey, lightgrey);
+  background-image: white;
 }
-
-/*
-#button-about {
-  font-size: 20px;
-  font-family: "Comfortaa", cursive;
-  width: 100px;
-  background-color: grey;
-  padding-left: 2px;
-  border: 1px;
-  border-style: ridge;
+#displayPic {
+  margin-top: 30px;
+  box-shadow: #111;
+  border: #111;
   border-radius: 10px;
 }
-*/
 
 p {
   margin-left: 300px;
@@ -54,13 +47,13 @@ p:hover {
 
 .paragraph {
   color: black;
-  font-size: 18px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .first-paragraph {
   color: black;
   font-size: 24px;
-  font-style: italic;
 }
 .large-letter {
   font-weight: bold;
@@ -96,7 +89,7 @@ ul li:first-child {
   z-index: 1; /* Keeps it on top*/
   top: 0;
   left: 0;
-  background-color: #111; /*Makes it black*/
+  background-color: rgba(0, 0, 0, 0.8); /*Makes it black #111*/
   overflow-x: hidden; /* Disables horizontal scroll*/
   padding-top: 60px; /*Place Content 60px from the top*/
   transition: 0.5s; /*0.5 second transition effect to slide in the sidebar*/
@@ -113,9 +106,9 @@ ul li:first-child {
 
 /* when changes the color of the links when the mouse hovers over them*/
 
-.sidebar a:hover {
+/* .sidebar a:hover {
   color: #f1f1f1;
-}
+} */
 
 /* Puts the close button in the top right corner*/
 
@@ -130,11 +123,11 @@ ul li:first-child {
 /* open the sidebar*/
 
 .openbtn {
-  font-size: 20px;
+  font-size: 40px;
   cursor: pointer;
   background-color: #111;
   color: white;
-  padding: 10px 15px;
+  padding: 5px 5px;
   border: none;
 }
 

@@ -1,5 +1,6 @@
 "use strict";
 /*---------------------------------------SideBar Menu----------------------------------------------- */
+
 function openMenu() {
   document.getElementById("sidebar-Menu").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";
